@@ -16,7 +16,6 @@ from dotenv import load_dotenv
 from processors.document_processor import process_document
 from processors.knowledge_extractor import extract_knowledge_graph
 from processors.question_generator import generate_questions
-from db.supabase_client import get_supabase_client, store_nodes, store_questions, update_file_status
 
 # Load environment variables
 load_dotenv()
