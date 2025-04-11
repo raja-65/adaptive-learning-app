@@ -1,0 +1,16 @@
+# Node + Next.js
+node_modules/
+.next/
+dist/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+env/
+
+# VSCode
+.vscode/
+
+# Env files
+.env
