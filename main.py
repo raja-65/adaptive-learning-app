@@ -1,5 +1,11 @@
 import os
 from fastapi import FastAPI, UploadFile, File, HTTPException, Form, Depends, BackgroundTasks
+from db.supabase_client import (
+    get_supabase_client,
+    store_nodes,
+    store_questions,
+    update_file_status,
+)
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Optional, Dict, Any
