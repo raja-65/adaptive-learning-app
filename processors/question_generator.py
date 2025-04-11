@@ -1,8 +1,8 @@
 import os
 import uuid
 from typing import List, Dict, Any
-from langchain.llms import Groq
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_groq import ChatGroq
 import json
 
 def generate_questions(node: Dict[str, Any], num_questions: int = 3) -> List[Dict[str, Any]]:
